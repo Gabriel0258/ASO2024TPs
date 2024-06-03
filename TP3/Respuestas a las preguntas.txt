@@ -10,8 +10,13 @@ Código “tareas_CON_hilos.py”:
 3) Un escenario en el que se puede utilizar el multi-hilado es en la optimización de la búsqueda en base de datos.
 
 Código “sumador-restador.py”:
-1) Es ligeramente más rápido con respecto al código sin hilos al ejecutarse todo a la vez.
+1) No se llega a apreciar si el tiempo de ejcucción es ligeramente más rápido o lento.
 2) El valor final termina siendo un número distinto cada vez que se ejecuta el código.
 3) Esto sucede debido a que los hilos se sobreponen uno encima de otro sin un orden o una sincronización.
 4) Añadiendo un semáforo para evitar que ambos hilos ingresen a la región crítica al mismo tiempo y evitar que se sobreescriban constantemente, así permitiendo cambiar el valor de la variable un proceso a la vez.
+
+Código "sumador-restador_SIN_race.py":
+1) Al ejecutarse primero la suma y luego la resta el valor final termina siendo siempre 0.
+2) El tiempo de ejecución es el mismo que en los dos casos anteriores del "sumador-restador".
+
 
