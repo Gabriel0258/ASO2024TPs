@@ -1,0 +1,17 @@
+
+Código “tareas_SIN_hilos.py”:
+1) El tiempo de ejecución se encuentra entre los 6 y 5,9 segundos ya que las tareas se van ejecutando una a la vez y no al mismo tiempo, por lo que puede no ser tan predecible porque el tiempo siempre va a depender de lo que tarde ‘tarea_1’.
+2) Un ejemplo que puede ser considerado un proceso de “máxima velocidad posible” es el ordenar una habitación, esta acción siempre va a depender de la velocidad de ejecución de la persona que se encuentre ordenando. 
+3) Un ejemplo de procesos de “velocidad de respuesta no dependiente de la velocidad de procesamiento” es la lectura de la memoria “caché”.
+
+Código “tareas_CON_hilos.py”:
+1) El tiempo de ejecución de este código se redujo a los 4 segundos y el tiempo total siempre va a ser igual o cercano al tiempo de ejecución de la tarea más larga que en este caso es la “tarea_3”.
+2) Las funciones se ejecutan todas a la misma vez y terminan en el orden establecido.
+3) Un escenario en el que se puede utilizar el multi-hilado es en la optimización de la búsqueda en base de datos.
+
+Código “sumador-restador.py”:
+1) Es ligeramente más rápido con respecto al código sin hilos al ejecutarse todo a la vez.
+2) El valor final termina siendo un número distinto cada vez que se ejecuta el código.
+3) Esto sucede debido a que los hilos se sobreponen uno encima de otro sin un orden o una sincronización.
+4) Añadiendo un semáforo para evitar que ambos hilos ingresen a la región crítica al mismo tiempo y evitar que se sobreescriban constantemente, así permitiendo cambiar el valor de la variable un proceso a la vez.
+
